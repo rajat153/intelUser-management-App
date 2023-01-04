@@ -8,7 +8,7 @@ const User = require("./models/users");
 var bodyParser = require("body-parser");
 const { findByIdAndUpdate } = require("./models/users");
 
-const dB_URL = process.env.DB_URL || "mongodb://localhost:27017/intelUser"
+const dB_URL = process.env.DB_URL || mongodb+srv://intelUser:Qwerty123@intel.lvsh3ra.mongodb.net/?retryWrites=true&w=majority
 
 mongoose
   .connect(dB_URL, { useNewUrlParser: true })
