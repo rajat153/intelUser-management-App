@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"node index.js\" \"cd ./fe && npm start\"",
+    "build":"npm install && cd ./fe && npm install && npm run build"
+    "start": "node index.js,
     "backend": "node index.js"
   },
   "author": "",
